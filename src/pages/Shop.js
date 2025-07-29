@@ -11,11 +11,11 @@ function Shop() {
    return (
       <div>
          {/* <Poster /> */}
-        <Carousel />
+         <Carousel />
          <Popular />
-         <Offers/>
-         <NewCollections/>
-         <Newsletter/>
+         <Offers />
+         <NewCollections />
+         <Newsletter />
       </div>
    )
 }

@@ -10,7 +10,6 @@ function Product() {
   const { all_Product } = useContext(ShopContext);
   const { productId } = useParams();
 
-  // if (!all_product) return <div>Loading...</div>;
 
   const product = all_Product.find((e) => e.id === parseInt(productId));
 

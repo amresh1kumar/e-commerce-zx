@@ -11,14 +11,15 @@ const getDefaultCart = () => {
    return cart;
 };
 
+
 const ShopContextProvider = (props) => {
    const [cartItems, setCardItems] = useState(getDefaultCart());
-    
+
 
 
    const addTocart = (ItemId) => {
       setCardItems((prev) => ({ ...prev, [ItemId]: prev[ItemId] + 1 }));
-      console.log(cartItems);
+      // console.log(cartItems);
    };
 
    const removeFromCart = (ItemId) => {

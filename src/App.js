@@ -1,22 +1,23 @@
-import react from "react";
-import Header from "./components/navbar/Header"
+import Navbar from "./components/navbar/Navbar"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Shop from "./pages/Shop";
 import ShopCategory from "./pages/ShopCategory";
 import Product from "./pages/Product"
 import Cart from "./pages/Cart";
-import LoginSignup from "./pages/LoginSignup";
+import LoginPage from "./pages/LoginPage";
+import ForgotPassword from "./pages/ForgotPassword"
 import Footer from "./components/Footer/Footer";
 import men_banner from "./assets/banner/banner.jpg"
 import women_banner from "./assets/banner/women_banner.avif"
 import kids_banner from "./assets/banner/kids_banner.jpg"
+import Register from "./pages/Register";
 
 
 function App() {
   return (
     <div >
       <BrowserRouter>
-        <Header />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Shop />} />
           <Route path="/mens" element={<ShopCategory category="men" banner={men_banner} />} />
@@ -28,7 +29,9 @@ function App() {
           <Route path="/product" element={<Product />} />
           <Route path="/product/:productId" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/login" element={<LoginSignup />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/forgotpassword" element={<ForgotPassword />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -5,27 +5,25 @@ import p3 from '../assets/women/w3.webp'
 import p4 from '../assets/women/w4.avif'
 
 //men
-import p5 from '../assets/men/m1.png'
-import p6 from '../assets/men/m2.png'
-import p7 from '../assets/men/m3.png'
-import p8 from '../assets/men/m4.png'
+import p11 from '../assets/men/m1.png'
+import p12 from '../assets/men/m2.png'
+import p13 from '../assets/men/m3.png'
+import p14 from '../assets/men/m4.png'
 
 
 let data_product = [
-    {
-        id: 1, name: "Frock", category: "women", image: p1, new_price: 50.0,
-        old_price: 80.5
-    },
-    
-    { id: 2, name: "Frock", category: "women", image: p2, new_price: 60.0, old_price: 90.5 },
-    { id: 3, name: "Kurti", category: "women", image: p3, new_price: 75.0, old_price: 120.0 },
-    { id: 4, name: "Frock", category: "women", image: p4, new_price: 90.0, old_price: 140.0 },
+    // Women
+    { id: 1, name: "Printed Kurti", category: "women", image: p1, new_price: 500.0, old_price: 1000.5 },
+    { id: 2, name: "Blue Denim Jeans", category: "women", image: p2, new_price: 600.0, old_price: 900.5 },
+    { id: 3, name: "Silk Saree", category: "women", image: p3, new_price: 750.0, old_price: 1200.0 },
+    { id: 4, name: "Winter Jacket", category: "women", image: p4, new_price: 900.0, old_price: 1400.0 },
 
-    { id: 5, name: "Sweater", category: "men", image: p5, new_price: 92.0, old_price: 145.0 },
-    { id: 6, name: "Jeans", category: "men", image: p6, new_price: 60.0, old_price: 90.5 },
+    // Men
+    { id: 11, name: "Wool Sweater", category: "men", image: p11, new_price: 920.0, old_price: 1450.0 },
+    { id: 12, name: "Formal Gown", category: "men", image: p12, new_price: 990.0, old_price: 1600.0 },
+    { id: 13, name: "Summer Shorts", category: "men", image: p13, new_price: 400.0, old_price: 650.0 },
+    { id: 14, name: "Striped Polo", category: "men", image: p14, new_price: 520.0, old_price: 858.0 },
+];
 
-    { id: 7, name: "Shorts", category: "men", image: p7, new_price: 40.0, old_price: 65.0 },
-    { id: 8, name: "T-Shirt", category: "men", image: p8, new_price: 45.0, old_price: 70.0 },
-]
 
 export default data_product;

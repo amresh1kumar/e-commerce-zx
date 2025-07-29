@@ -38,43 +38,45 @@ import p31 from '../assets/kids/kid7.png'
 import p32 from '../assets/kids/kid10.png'
 
 
-let all_product = [
-    { id: 1, name: "Kurti", category: "women", image: p1, new_price: 50.0, old_price: 80.5 },
-    { id: 2, name: "Jeans", category: "women", image: p2, new_price: 60.0, old_price: 90.5 },
-    { id: 3, name: "Saree", category: "women", image: p3, new_price: 75.0, old_price: 120.0 },
-    { id: 4, name: "Jacket", category: "women", image: p4, new_price: 90.0, old_price: 140.0 },
-    { id: 5, name: "T-Shirt", category: "women", image: p5, new_price: 45.0, old_price: 70.0 },
-    { id: 6, name: "Dress", category: "women", image: p6, new_price: 85.0, old_price: 130.0 },
-    { id: 7, name: "Hoodie", category: "women", image: p7, new_price: 95.0, old_price: 150.0 },
-    { id: 8, name: "Leggings", category: "women", image: p8, new_price: 55.0, old_price: 100.0 },
-    { id: 9, name: "Shirt", category: "women", image: p9, new_price: 70.0, old_price: 110.0 },
-    { id: 10, name: "Jumpsuit", category: "women", image: p10, new_price: 88.0, old_price: 135.0 },
+const all_product = [
+  // Women
+  { id: 1, name: "Printed Kurti", category: "women", image: p1, new_price: 500.0, old_price: 800.5 },
+  { id: 2, name: "Blue Denim Jeans", category: "women", image: p2, new_price: 600.0, old_price: 900.5 },
+  { id: 3, name: "Silk Saree", category: "women", image: p3, new_price: 750.0, old_price: 1200.0 },
+  { id: 4, name: "Winter Jacket", category: "women", image: p4, new_price: 900.0, old_price: 1400.0 },
+  { id: 5, name: "Basic T-Shirt", category: "women", image: p5, new_price: 450.0, old_price: 700.0 },
+  { id: 6, name: "Casual Dress", category: "women", image: p6, new_price: 850.0, old_price: 1300.0 },
+  { id: 7, name: "Fleece Hoodie", category: "women", image: p7, new_price: 905.0, old_price: 1500.0 },
+  { id: 8, name: "Yoga Leggings", category: "women", image: p8, new_price: 505.0, old_price: 1000.0 },
+  { id: 9, name: "Formal Shirt", category: "women", image: p9, new_price: 700.0, old_price: 1100.0 },
+  { id: 10, name: "Black Jumpsuit", category: "women", image: p10, new_price: 880.0, old_price: 1305.0 },
 
-    { id: 11, name: "Sweater", category: "men", image: p11, new_price: 92.0, old_price: 145.0 },
-    { id: 12, name: "Gown", category: "men", image: p12, new_price: 99.0, old_price: 160.0 },
-    { id: 13, name: "Shorts", category: "men", image: p13, new_price: 40.0, old_price: 65.0 },
-    { id: 14, name: "Top", category: "men", image: p14, new_price: 52.0, old_price: 85.0 },
-    { id: 15, name: "Kurta", category: "men", image: p15, new_price: 78.0, old_price: 115.0 },
-    { id: 16, name: "Skirt", category: "men", image: p16, new_price: 73.0, old_price: 110.0 },
-    { id: 17, name: "Skirt", category: "men", image: p17, new_price: 73.0, old_price: 110.0 },
-    { id: 18, name: "Skirt", category: "men", image: p18, new_price: 73.0, old_price: 110.0 },
-    { id: 19, name: "Skirt", category: "men", image: p19, new_price: 73.0, old_price: 110.0 },
-    { id: 20, name: "Skirt", category: "men", image: p20, new_price: 73.0, old_price: 110.0 },
-    { id: 21, name: "Skirt", category: "men", image: p21, new_price: 73.0, old_price: 110.0 },
+  // Men
+  { id: 11, name: "Wool Sweater", category: "men", image: p11, new_price: 920.0, old_price: 1450.0 },
+  { id: 12, name: "Formal Gown", category: "men", image: p12, new_price: 909.0, old_price: 1600.0 },
+  { id: 13, name: "Summer Shorts", category: "men", image: p13, new_price: 400.0, old_price: 650.0 },
+  { id: 14, name: "Striped Polo", category: "men", image: p14, new_price: 520.0, old_price: 850.0 },
+  { id: 15, name: "Ethnic Kurta", category: "men", image: p15, new_price: 780.0, old_price: 1150.0 },
+  { id: 16, name: "Classic Skirt", category: "men", image: p16, new_price: 730.0, old_price: 1100.0 },
+  { id: 17, name: "Formal Skirt", category: "men", image: p17, new_price: 736.0, old_price: 1100.0 },
+  { id: 18, name: "Denim Skirt", category: "men", image: p18, new_price: 730.0, old_price: 1100.0 },
+  { id: 19, name: "Cotton Skirt", category: "men", image: p19, new_price: 735.0, old_price: 1150.0 },
+  { id: 20, name: "Trendy Skirt", category: "men", image: p20, new_price: 603.0, old_price: 2005.0 },
+  { id: 21, name: "Slim Fit Skirt", category: "men", image: p21, new_price: 600.0, old_price: 1200.0 },
+  { id: 22, name: "Classic Blue Skirt", category: "men", image: p22, new_price: 730.0, old_price: 1150.0 },
+  { id: 23, name: "Grey Work Skirt", category: "men", image: p23, new_price: 730.0, old_price: 800.0 },
+  { id: 24, name: "Pleated Skirt", category: "men", image: p24, new_price: 530.0, old_price: 1000.0 },
 
-    { id: 22, name: "Skirt", category: "men", image: p22, new_price: 73.0, old_price: 110.0 },
-    { id: 23, name: "Skirt", category: "men", image: p23, new_price: 73.0, old_price: 110.0 },
-    { id: 24, name: "Skirt", category: "men", image: p24, new_price: 73.0, old_price: 110.0 },
+  // Kids
+  { id: 25, name: "Denim Shirt", category: "kid", image: p25, new_price: 850.0, old_price: 1500.0 },
+  { id: 26, name: "Khaki Cargo Pants", category: "kid", image: p26, new_price: 880.0, old_price: 1300.0 },
+  { id: 27, name: "Black Cargo Pants", category: "kid", image: p27, new_price: 990.0, old_price: 1500.0 },
+  { id: 28, name: "Green Cargo Pants", category: "kid", image: p28, new_price: 560.0, old_price: 1000.0 },
+  { id: 29, name: "Slim Fit Cargo", category: "kid", image: p29, new_price: 600.0, old_price: 1000.0 },
+  { id: 30, name: "Brown Cargo Pants", category: "kid", image: p30, new_price: 530.0, old_price: 1100.0 },
+  { id: 31, name: "Blue Cargo Pants", category: "kid", image: p31, new_price: 500.0, old_price: 800.0 },
+  { id: 32, name: "Printed Cargo Pants", category: "kid", image: p32, new_price: 530.0, old_price: 1300.0 },
+];
 
-    { id: 25, name: "Denim Shirt", category: "kid", image: p25, new_price: 85.0, old_price: 140.0 },
-    { id: 26, name: "Cargo Pants", category: "kid", image: p26, new_price: 88.0, old_price: 130.0 },
-
-    { id: 27, name: "Cargo Pants", category: "kid", image: p27, new_price: 88.0, old_price: 130.0 },
-    { id: 28, name: "Cargo Pants", category: "kid", image: p28, new_price: 88.0, old_price: 130.0 },
-    { id: 29, name: "Cargo Pants", category: "kid", image: p29, new_price: 88.0, old_price: 130.0 },
-    { id: 30, name: "Cargo Pants", category: "kid", image: p30, new_price: 88.0, old_price: 130.0 },
-    { id: 31, name: "Cargo Pants", category: "kid", image: p31, new_price: 88.0, old_price: 130.0 },
-    { id: 32, name: "Cargo Pants", category: "kid", image: p32, new_price: 88.0, old_price: 130.0 },
-]
 
 export default all_product;
