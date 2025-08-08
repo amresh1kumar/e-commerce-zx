@@ -15,8 +15,6 @@ const getDefaultCart = () => {
 const ShopContextProvider = (props) => {
    const [cartItems, setCardItems] = useState(getDefaultCart());
 
-
-
    const addTocart = (ItemId) => {
       setCardItems((prev) => ({ ...prev, [ItemId]: prev[ItemId] + 1 }));
       // console.log(cartItems);
@@ -48,7 +46,7 @@ const ShopContextProvider = (props) => {
             totalItmes += cartItems[item];
          }
 
-      }
+      } 
       return totalItmes;
    }
 

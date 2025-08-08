@@ -1,8 +1,9 @@
 import React from "react";
 import logo from "../assets/logo/Z.png"
+import '../CSS/Register.css'
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import { Link, useNavigate } from "react-router-dom";
-import { Button, Checkbox, Form, Input } from "antd";
+import { Button, Form, Input } from "antd";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -31,17 +32,15 @@ const Register = () => {
   return (
     <Form
       form={form}
-      name="basic"
-      labelCol={{ span: 8 }}
-      wrapperCol={{ span: 16 }}
-      style={{ Width: "100%", height: "100vh" }}
+      name="registerForm"
+      className="register-form"
       initialValues={{ remember: true }}
       onFinish={onFinish}
       onFinishFailed={onFinishFailed}
       autoComplete="off"
     >
       <div className="form-items">
-        <img src={logo} style={{ height: "100px", width: "100px" }} />
+        <img src={logo} alt="logo" className="logo" />
 
         <Form.Item
           name="username"
@@ -61,7 +60,7 @@ const Register = () => {
             name="username"
             placeholder="Mobile Number or Email"
             prefix={<UserOutlined style={{ fontSize: "17px" }} />}
-            style={{ padding: "10px" }}
+            className="input-field"
           />
         </Form.Item>
 
@@ -75,7 +74,8 @@ const Register = () => {
           <Input.Password
             placeholder="Please input your password!"
             prefix={<LockOutlined style={{ fontSize: "17px" }} />}
-            style={{ padding: "10px" }}
+            className="input-field"
+
           />
         </Form.Item>
 
@@ -96,20 +96,20 @@ const Register = () => {
           ]}
         >
           <Input.Password
-            styles={{ marginTop: "10px" }}
             placeholder="Please input your confirm password!"
             prefix={<LockOutlined style={{ fontSize: "17px" }} />}
-            style={{ padding: "10px" }}
+            className="input-field"
+
           />
         </Form.Item>
 
-        <Form.Item label={null} className="login-btn">
+        <Form.Item label={null} className="sign-up-btn">
           <Button type="primary" htmlType="submit">
             Sign Up
           </Button>
         </Form.Item>
 
-        <Form.Item style={{ textAlign: "center" }}>
+        <Form.Item className="login-link">
           <p>
             Already have an account?<Link to="/login">Login</Link>
           </p>

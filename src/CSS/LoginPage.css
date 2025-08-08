@@ -1,67 +1,60 @@
 * {
    margin: 0;
    padding: 0;
+   box-sizing: border-box;
+}
+
+.login-form {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
 }
 
 .form-items {
-   display: inline-block;
-   width: 700px;
-   position: relative;
-   left: 600px;
-   top: 120px;
-   justify-content: center;
-   align-items: center;
-}
-
-.form-items img {
-   position: relative;
-   left: 180px;
-}
-
-.form-items h1 {
-   width: 465px;
-   text-align: center;
-   margin-bottom: 30px;
-   /* border: 1px solid red; */
-}
-
-.common input {
-   padding: 10px;
-   width: 100% !important;
-}
-
-.pass {
    width: 100%;
+   max-width: 500px;
+   padding: 30px;
+   background-color: #fff;
+   border: 1px dotted gray;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+}
+
+
+.logo {
+   display: block;
+   margin: 0 auto 20px;
+   width: 120px;
+}
+
+.input-field {
    padding: 10px;
-   margin-bottom: 0 !important;
-}
-
-.form-items input::placeholder {
-   text-transform: capitalize;
-   font-size: 1rem;
-}
-
-.rem-forgot {
-   width: 700px;
-   /* border: 1px solid red; */
 }
 
 .rem-forgot-inner {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+   /* border: 1px solid red; */
+   display: flex !important;
+   justify-content: space-between !important;
+   align-items: center !important;
+
+}
+
+.login-btn {
+   text-align: center;
+   margin-top: 10px;
    width: 100%;
    /* border: 1px solid red; */
-   position: relative;
-   right: 235px;
 }
 
 .login-btn button {
-   width: 470px;
-   /* border: 1px solid red; */
+   width: 100%;
    padding: 20px;
-   font-size: 1.2rem !important;
-   position: relative;
-   right: 235px;
+   font-size: 1rem;
+   font-weight: 500;
+}
 
+.signup-link {
+   text-align: center;
+   margin-top: 20px;
 }

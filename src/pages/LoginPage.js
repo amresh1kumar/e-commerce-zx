@@ -32,22 +32,17 @@ const LoginPage = () => {
 
   return (
     <Form
-      name="basic"
+      name="LoginForm"
       form={form}
-      labelCol={{ span: 8 }}
-      wrapperCol={{ span: 16 }}
-      style={{ width: "100%", height: "100vh" }}
+      className="login-form"
       initialValues={{ remember: true }}
       onFinish={onFinish}
       onFinishFailed={onFinishFailed}
       autoComplete="off"
     >
       <div className="form-items">
-        {/* <h1>Login</h1> */}
-        <img src={logo} style={{ height: "100px", width: "100px"}} />
-
+        <img src={logo} alt="logo" className="logo" />
         <Form.Item
-          className="common"
           name="username"
           rules={[
             {
@@ -60,24 +55,23 @@ const LoginPage = () => {
             type="email"
             placeholder="Mobile Number or Email"
             prefix={<UserOutlined style={{ fontSize: "17px" }} />}
-            style={{ padding: "10px" }}
+            className="input-field"
+
           />
         </Form.Item>
 
         <Form.Item
-          className="common"
           name="password"
           rules={[{ required: true, message: "Please input your password!" }]}
         >
           <Input.Password
-            className="pass"
             placeholder="Please input your password!"
             prefix={<LockOutlined style={{ fontSize: "17px" }} />}
-            style={{ padding: "10px" }}
+            className="input-field"
           />
         </Form.Item>
 
-        <Form.Item className="rem-forgot" label={null}>
+        <Form.Item label={null}>
           <div className="rem-forgot-inner">
             <Checkbox>Remember me</Checkbox>
             <Link to="/forgotpassword">Forgot Password?</Link>
@@ -90,7 +84,7 @@ const LoginPage = () => {
           </Button>
         </Form.Item>
 
-        <Form.Item style={{ textAlign: "center" }}>
+        <Form.Item className="signup-link">
           <p>
             Don't have an account? <Link to="/register">Sign Up</Link>
           </p>

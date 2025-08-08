@@ -3,6 +3,7 @@ import { LockOutlined, MailOutlined } from "@ant-design/icons";
 import { Button, Form, Input, message } from "antd";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo/Zx.png"
+import '../CSS/Forgotpassword.css'
 
 const EmpForgetpassword = () => {
   const [emailVerified, setEmailVerified] = useState(false);
@@ -39,20 +40,15 @@ const EmpForgetpassword = () => {
   return (
     <Form
       form={form}
-      name="basic"
-      labelCol={{ span: 8 }}
-      wrapperCol={{ span: 16 }}
-      style={{ width: "100%", height: "100vh" }}
+      name="forgot-password"
       onFinish={emailVerified ? handleResetPassword : handleEmailVerify}
+      className="forgot-password"
     >
       <div className="form-items">
-        <img src={logo} style={{ height: "100px", width: "100px" }} />
-
+        <img src={logo} alt="logo" className="logo" />
         <h1>Create a new Password</h1>
         <Form.Item
-          className="common"
           name="email"
-          // label="Registered Email"
           rules={[
             { required: true, message: "Please enter your registered email" },
           ]}
@@ -60,7 +56,7 @@ const EmpForgetpassword = () => {
           <Input
             placeholder="Enter your registered email"
             prefix={<MailOutlined style={{ fontSize: "17px" }} />}
-            style={{ padding: "10px" }}
+            className="input-field"
           />
         </Form.Item>
 
@@ -68,7 +64,6 @@ const EmpForgetpassword = () => {
           <>
             <Form.Item
               name="newPassword"
-              // label="New Password"
               rules={[
                 { required: true, message: "Please enter new password" },
                 { min: 6, message: "Password must be at least 6 characters" },
@@ -78,6 +73,7 @@ const EmpForgetpassword = () => {
                 prefix={<LockOutlined style={{ fontSize: "17px" }} />}
                 style={{ padding: "10px" }}
                 placeholder="New password"
+                className="input-field"
               />
             </Form.Item>
 
@@ -101,6 +97,8 @@ const EmpForgetpassword = () => {
                 prefix={<LockOutlined style={{ fontSize: "17px" }} />}
                 style={{ padding: "10px" }}
                 placeholder="Confirm new password"
+                className="input-field"
+
               />
             </Form.Item>
           </>
